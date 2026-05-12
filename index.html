@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Syed Jawad Shah | Full Stack Software Engineer</title>
-  <meta name="description" content="Professional portfolio of Syed Jawad Shah, a full stack software engineer specializing in Python, JavaScript, React, React Native, FastAPI, Flask, Django, Node.js, and AI-powered applications.">
+  <meta name="description" content="Syed Jawad Shah — Full Stack Software Engineer building production-ready web, mobile, backend, and AI-powered systems. Available for full-time roles.">
+  <meta property="og:title" content="Syed Jawad Shah | Full Stack Software Engineer">
+  <meta property="og:description" content="Full Stack Software Engineer with experience in React, Node.js, Python, FastAPI, Flask, Firebase, Supabase, and AI-powered applications.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Syed Jawad Shah home">
+    <a class="brand" href="index.html" aria-label="Syed Jawad Shah — home">
       <span class="brand-mark">SJ</span>
-      <span>
-        <strong>Syed Jawad Shah</strong>
-        <small>Full Stack Software Engineer</small>
-      </span>
+      <span><strong>Syed Jawad Shah</strong><small>Full Stack Software Engineer</small></span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span><span></span>
@@ -22,88 +24,156 @@
     <nav class="site-nav" id="site-nav">
       <a href="index.html" data-page="home">Home</a>
       <a href="about.html" data-page="about">About</a>
+      <a href="skills.html" data-page="skills">Skills</a>
       <a href="experience.html" data-page="experience">Experience</a>
       <a href="projects.html" data-page="projects">Projects</a>
       <a href="contact.html" data-page="contact">Contact</a>
+      <a href="contact.html" class="nav-cta">Hire Me</a>
     </nav>
   </header>
 
   <main>
+    <!-- ── HERO ── -->
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Rawalpindi, Pakistan</p>
-        <h1>Syed Jawad Shah</h1>
-        <p class="hero-lede">Full Stack Software Engineer building production-ready web, mobile, backend, and AI-powered systems with Python, JavaScript, React, React Native, Node.js, FastAPI, Flask, Django, Firebase, and Supabase.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="projects.html">View Projects</a>
-          <a class="button secondary" href="assets/documents/Syed-Jawad-Shah-Resume.pdf">Download Resume</a>
+        <div class="avail-badge" data-reveal>
+          <span class="avail-dot"></span>
+          Open to full-time opportunities
         </div>
-        <div class="hero-stats" aria-label="Professional highlights">
-          <div><strong>2025</strong><span>Software Engineering Graduate</span></div>
-          <div><strong>8+</strong><span>Major projects and systems</span></div>
-          <div><strong>100%</strong><span>FYP rule-validation accuracy</span></div>
+        <h1 data-reveal data-delay="1">
+          <span>Syed Jawad Shah</span><br>
+          <span class="text-gradient">Full Stack Engineer</span>
+        </h1>
+        <p class="hero-lede" data-reveal data-delay="2">
+          Building production-ready web applications, REST APIs, mobile apps, and AI-powered systems using Python, JavaScript, React, React Native, Node.js, FastAPI, Flask, and Firebase.
+        </p>
+        <div class="hero-actions" data-reveal data-delay="3">
+          <a class="button primary" href="projects.html">View Projects</a>
+          <a class="button secondary" href="assets/documents/Syed-Jawad-Shah-Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        </div>
+        <div class="hero-stats" data-reveal data-delay="4">
+          <div class="stat-card">
+            <strong data-count="2" data-suffix="+">2+</strong>
+            <span>Years of professional experience</span>
+          </div>
+          <div class="stat-card">
+            <strong data-count="8" data-suffix="+">8+</strong>
+            <span>Production-grade projects built</span>
+          </div>
+          <div class="stat-card">
+            <strong data-count="100" data-suffix="%">100%</strong>
+            <span>FYP rule-validation accuracy</span>
+          </div>
         </div>
       </div>
-      <div class="hero-media">
+      <div class="hero-media" data-reveal="right">
         <img src="assets/images/syed-jawad-shah.png" alt="Syed Jawad Shah">
       </div>
     </section>
 
+    <!-- ── INTRO ── -->
     <section class="section intro-grid">
-      <div>
+      <div data-reveal="left">
         <p class="eyebrow">Profile</p>
-        <h2>Engineer focused on complete, useful software.</h2>
+        <h2>Engineer who builds complete, useful software.</h2>
       </div>
-      <p>Syed works across frontend interfaces, backend APIs, database design, mobile applications, automation workflows, and AI-integrated products. His experience includes live production development at Amal Learning, backend engineering at Hit Hub Solutions, and a final year project that automated document format checking with Python, Flask, PDF parsing, and Firebase.</p>
+      <p data-reveal data-delay="2">
+        Syed works across the full stack — frontend interfaces, backend APIs, database architecture, mobile applications, automation workflows, and AI-integrated products. His production experience includes live development at Amal Learning and backend engineering at Hit Hub Solutions. He ships systems that work end-to-end, not just demos.
+      </p>
     </section>
 
+    <!-- ── CORE STACK ── -->
     <section class="section band">
-      <div class="section-heading">
+      <div class="section-head" data-reveal>
         <p class="eyebrow">Core Stack</p>
-        <h2>Technologies used confidently</h2>
+        <h2>Technologies used in production</h2>
+        <p>Selected from real project and professional work — not just listed for appearances.</p>
       </div>
-      <div class="skill-cloud">
+      <div class="skill-cloud" data-reveal data-delay="2">
         <span>Python</span><span>JavaScript</span><span>React.js</span><span>React Native</span>
         <span>Node.js</span><span>Next.js</span><span>FastAPI</span><span>Flask</span>
         <span>Django</span><span>Firebase</span><span>Supabase</span><span>MongoDB</span>
-        <span>SQL</span><span>REST APIs</span><span>OpenAI API</span><span>GitHub</span>
+        <span>PostgreSQL</span><span>REST APIs</span><span>OpenAI API</span><span>Git &amp; GitHub</span>
+        <span>Java</span><span>C++</span><span>Streamlit</span><span>HTML &amp; CSS</span>
       </div>
     </section>
 
+    <!-- ── WHAT I BUILD ── -->
     <section class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Selected Work</p>
-        <h2>Project strengths at a glance</h2>
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">What I Build</p>
+        <h2>Four areas of engineering strength</h2>
       </div>
-      <div class="cards three">
+      <div class="cards three" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+        <article class="card" data-reveal data-delay="1">
+          <span class="card-kicker">Web Applications</span>
+          <h3>Full-stack web systems with React, Next.js, and Node.js</h3>
+          <p>End-to-end web apps from component architecture and routing to API integration, database design, and deployment.</p>
+        </article>
+        <article class="card" data-reveal data-delay="2">
+          <span class="card-kicker">Backend APIs</span>
+          <h3>Python-powered APIs with FastAPI, Flask, and Django</h3>
+          <p>RESTful API design, authentication, data modeling, Firebase/Supabase integration, and performance optimization.</p>
+        </article>
+        <article class="card" data-reveal data-delay="3">
+          <span class="card-kicker">Mobile Apps</span>
+          <h3>Cross-platform apps with React Native</h3>
+          <p>iOS and Android applications sharing one codebase — navigation, push notifications, device APIs, and backend connections.</p>
+        </article>
+        <article class="card" data-reveal data-delay="4">
+          <span class="card-kicker">AI-Powered Tools</span>
+          <h3>Automation systems using OpenAI API and Python</h3>
+          <p>Prompt-driven content pipelines, document analysis, rule-based validation, and AI-enhanced application features.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── SELECTED WORK ── -->
+    <section class="section band">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects that demonstrate real engineering</h2>
+      </div>
+      <div class="cards three" data-reveal data-delay="1">
         <article class="card">
           <span class="card-kicker">AI + Backend</span>
           <h3>Automated Book Generation System</h3>
-          <p>FastAPI platform integrating OpenAI and Supabase to generate structured book content from user-defined topics.</p>
-          <a href="projects.html#book-generator">Read project</a>
+          <p>FastAPI platform integrating OpenAI and Supabase to generate structured book content from user topics.</p>
+          <a href="projects.html#book-generator">View project</a>
         </article>
         <article class="card">
-          <span class="card-kicker">Automation</span>
+          <span class="card-kicker">Automation + FYP</span>
           <h3>Document Format Checking System</h3>
-          <p>Python and Flask system validating PDF formatting rules including margins, fonts, spacing, alignment, and structure.</p>
-          <a href="projects.html#adf-checker">Read project</a>
+          <p>Python and Flask system validating PDF formatting — margins, fonts, spacing — with 100% rule accuracy.</p>
+          <a href="projects.html#adf-checker">View project</a>
         </article>
         <article class="card">
           <span class="card-kicker">Web Platform</span>
           <h3>E-Commerce Web Application</h3>
-          <p>Responsive shopping platform with authentication, product catalog, cart logic, and Firebase integration.</p>
-          <a href="projects.html#ecommerce">Read project</a>
+          <p>Responsive shopping platform with Firebase authentication, product catalog, cart logic, and checkout flow.</p>
+          <a href="projects.html#ecommerce">View project</a>
         </article>
+      </div>
+    </section>
+
+    <!-- ── CTA BAND ── -->
+    <section class="cta-band" data-reveal>
+      <h2>Let's build something great.</h2>
+      <p>I'm available for full-stack, backend, mobile, and AI-powered software engineering roles. Let's talk about what I can build for your team.</p>
+      <div class="btn-group">
+        <a class="button primary" href="contact.html">Get in Touch</a>
+        <a class="button ghost-white" href="assets/documents/Syed-Jawad-Shah-Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Syed Jawad Shah - Full Stack Software Engineer</p>
-    <div>
+    <p>© 2026 Syed Jawad Shah · Full Stack Software Engineer · Rawalpindi, Pakistan</p>
+    <div class="footer-links">
       <a href="mailto:sjawadshah2001@gmail.com">Email</a>
-      <a href="https://github.com/syedjawadshah2001">GitHub</a>
-      <a href="https://linkedin.com/in/syed-jawad-shah-17a380252">LinkedIn</a>
+      <a href="https://github.com/syedjawadshah2001" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/syed-jawad-shah-17a380252" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="assets/documents/Syed-Jawad-Shah-Resume.pdf" target="_blank" rel="noopener">Resume PDF</a>
     </div>
   </footer>
   <script src="assets/script.js"></script>

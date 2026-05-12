@@ -2,108 +2,177 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Projects | Syed Jawad Shah</title>
-  <meta name="description" content="Professional project portfolio of Syed Jawad Shah with full explanations of AI, web, backend, Java, C++, Flask, Firebase, and FastAPI projects.">
+  <meta name="description" content="Project portfolio of Syed Jawad Shah — AI systems, web platforms, backend APIs, Java applications, and C++ systems with full technical breakdowns.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">SJ</span><span><strong>Syed Jawad Shah</strong><small>Full Stack Software Engineer</small></span></a>
+    <a class="brand" href="index.html">
+      <span class="brand-mark">SJ</span>
+      <span><strong>Syed Jawad Shah</strong><small>Full Stack Software Engineer</small></span>
+    </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
     <nav class="site-nav" id="site-nav">
-      <a href="index.html" data-page="home">Home</a><a href="about.html" data-page="about">About</a><a href="experience.html" data-page="experience">Experience</a><a href="projects.html" data-page="projects">Projects</a><a href="contact.html" data-page="contact">Contact</a>
+      <a href="index.html" data-page="home">Home</a>
+      <a href="about.html" data-page="about">About</a>
+      <a href="skills.html" data-page="skills">Skills</a>
+      <a href="experience.html" data-page="experience">Experience</a>
+      <a href="projects.html" data-page="projects">Projects</a>
+      <a href="contact.html" data-page="contact">Contact</a>
+      <a href="contact.html" class="nav-cta">Hire Me</a>
     </nav>
   </header>
 
   <main>
     <section class="page-hero">
-      <p class="eyebrow">Projects</p>
-      <h1>Detailed project portfolio across AI, automation, backend, web, Java, and C++ systems.</h1>
-      <p>Each project below explains the problem, implementation, technologies, and engineering value in a professional portfolio format.</p>
+      <p class="eyebrow" data-reveal>Projects</p>
+      <h1 data-reveal data-delay="1">Eight projects across AI, automation, full-stack web, Java, and C++ systems.</h1>
+      <p data-reveal data-delay="2">Each project below documents the problem it solves, the engineering decisions made, the technology stack used, and the measurable outcome delivered.</p>
     </section>
 
-    <section class="section project-stack">
-      <article class="project-detail featured" id="adf-checker">
-        <div class="project-number">FYP</div>
-        <div>
-          <span class="card-kicker">Python, Flask, PDF Parsing, Firebase, Streamlit Cloud</span>
-          <h2>Automated Document Format Checking System</h2>
-          <p>This final year project is a web-based automation platform designed to reduce manual document formatting review. The system validates uploaded academic documents against defined formatting rules, including margins, fonts, spacing, alignment, and structural layout. It uses Python and Flask for application logic, PDF parsing libraries for document inspection, and Firebase Cloud Firestore for real-time document tracking and storage.</p>
-          <p>The platform was successfully deployed on Streamlit Community Cloud and achieved 100% validation accuracy under the rule-based testing scenarios defined for the project. Its main value is replacing slow manual checking with consistent automated validation.</p>
-          <div class="tag-row"><span>Automation</span><span>Rule Validation</span><span>PDF Analysis</span><span>Firebase</span><span>Deployment</span></div>
-        </div>
-      </article>
+    <section class="section">
+      <!-- ── FILTERS ── -->
+      <div class="project-filters" data-reveal>
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ai">AI &amp; Automation</button>
+        <button class="filter-btn" data-filter="web">Web &amp; Backend</button>
+        <button class="filter-btn" data-filter="java">Java &amp; C++</button>
+      </div>
 
-      <article class="project-detail" id="book-generator">
-        <div class="project-number">01</div>
-        <div>
-          <span class="card-kicker">Python, FastAPI, OpenAI API, Supabase</span>
-          <h2>Automated Book Generation System</h2>
-          <p>An AI-powered backend system that generates structured book content from user-defined topics. FastAPI powers the API layer, OpenAI handles dynamic content generation, and Supabase provides PostgreSQL storage plus authentication support.</p>
-          <p>The project demonstrates modern AI product architecture: user input is converted into structured content, stored securely, and prepared for export into document formats such as PDF or DOC. It highlights API design, prompt-driven content workflows, database-backed user management, and automation of long-form content generation.</p>
-          <div class="tag-row"><span>AI System</span><span>FastAPI</span><span>OpenAI</span><span>Supabase</span><span>Document Export</span></div>
-        </div>
-      </article>
+      <div class="project-stack">
 
-      <article class="project-detail">
-        <div class="project-number">02</div>
-        <div>
-          <span class="card-kicker">Java, OOP, Desktop Application</span>
-          <h2>Library Management System</h2>
-          <p>A desktop-based Java application for managing library operations such as book records, issue and return tracking, and automated fine calculation. The system uses object-oriented programming principles to organize entities like books, members, transactions, and records.</p>
-          <p>This project shows strong fundamentals in Java, class design, validation logic, and state management for administrative workflows. It is useful as a practical example of turning real-world institutional processes into structured software modules.</p>
-          <div class="tag-row"><span>Java</span><span>OOP</span><span>Records</span><span>Validation</span></div>
-        </div>
-      </article>
+        <!-- FYP -->
+        <article class="project-detail featured" id="adf-checker" data-category="ai" data-reveal>
+          <div class="project-num">FYP</div>
+          <div>
+            <span class="card-kicker">Python · Flask · PDF Parsing · Firebase · Streamlit</span>
+            <h2>Automated Document Format Checking System</h2>
+            <p>A web-based automation platform that eliminates manual academic document formatting review. The system accepts PDF uploads and validates them against a defined rule set — checking margins, font types and sizes, line spacing, text alignment, heading hierarchy, and structural layout. Every rule produces a pass/fail result with a precise location reference.</p>
+            <p>Built with Python and Flask for the application layer, PDF parsing libraries for document inspection, and Firebase Cloud Firestore for real-time document tracking and result storage. Deployed on Streamlit Community Cloud for public access.</p>
+            <p><strong>Outcome:</strong> 100% rule-validation accuracy across all test scenarios defined for the project evaluation. Replaced manual checking with consistent, instant automated feedback.</p>
+            <div class="tag-row">
+              <span>Automation</span><span>Rule Validation</span><span>PDF Analysis</span>
+              <span>Firebase</span><span>Deployed</span><span>100% Accuracy</span>
+            </div>
+            <div class="project-links">
+              <a class="proj-link" href="https://github.com/syedjawadshah2001" target="_blank" rel="noopener">&#128279; GitHub Profile</a>
+            </div>
+          </div>
+        </article>
 
-      <article class="project-detail" id="ecommerce">
-        <div class="project-number">03</div>
-        <div>
-          <span class="card-kicker">HTML, CSS, JavaScript, Firebase</span>
-          <h2>E-Commerce Web Application</h2>
-          <p>A responsive e-commerce platform with authentication, product catalog browsing, and cart functionality. Firebase supports user authentication and data handling, while the frontend focuses on product display, shopping flow, and responsive layout behavior.</p>
-          <p>The project demonstrates frontend development, client-side logic, Firebase integration, and user-centered web application structure. It is especially valuable as a full workflow project because it connects account access, product discovery, and cart interaction in one experience.</p>
-          <div class="tag-row"><span>Responsive Web</span><span>Firebase Auth</span><span>Cart Logic</span><span>JavaScript</span></div>
-        </div>
-      </article>
+        <!-- Book Generator -->
+        <article class="project-detail" id="book-generator" data-category="ai" data-reveal data-delay="1">
+          <div class="project-num">01</div>
+          <div>
+            <span class="card-kicker">Python · FastAPI · OpenAI API · Supabase</span>
+            <h2>Automated Book Generation System</h2>
+            <p>An AI-powered backend system that generates structured, multi-chapter book content from a user-supplied topic. FastAPI handles the API layer, OpenAI generates section and chapter content from carefully constructed prompts, and Supabase (PostgreSQL) stores generated books with full authentication and user management support.</p>
+            <p>The architecture demonstrates end-to-end AI product design: input collection, prompt construction, content generation, structured storage, and export preparation into document formats such as PDF and DOCX. The system is built to be extended — adding new content types, export formats, or user tier management requires minimal structural change.</p>
+            <div class="tag-row">
+              <span>AI System</span><span>FastAPI</span><span>OpenAI</span>
+              <span>Supabase</span><span>Document Export</span><span>REST API</span>
+            </div>
+          </div>
+        </article>
 
-      <article class="project-detail">
-        <div class="project-number">04</div>
-        <div>
-          <span class="card-kicker">Python, Flask, Sessions</span>
-          <h2>Online Quiz System</h2>
-          <p>A Flask-based web application for online quizzes with session management and automated scoring logic. The system manages quiz flow, tracks user answers, calculates results, and delivers feedback through a browser-based interface.</p>
-          <p>This project reflects backend routing, web form handling, session control, and scoring algorithms. It is a compact but meaningful demonstration of building dynamic web applications with Python.</p>
-          <div class="tag-row"><span>Flask</span><span>Sessions</span><span>Scoring Logic</span><span>Web App</span></div>
-        </div>
-      </article>
+        <!-- E-Commerce -->
+        <article class="project-detail" id="ecommerce" data-category="web" data-reveal data-delay="2">
+          <div class="project-num">02</div>
+          <div>
+            <span class="card-kicker">HTML · CSS · JavaScript · Firebase</span>
+            <h2>E-Commerce Web Application</h2>
+            <p>A responsive e-commerce platform covering the full shopping workflow: user registration and authentication, product catalog browsing with search and filter, add-to-cart functionality, cart state management, and a checkout flow. Firebase handles user authentication via Firebase Auth and product and order data via Cloud Firestore.</p>
+            <p>This project demonstrates the entire frontend product lifecycle — session management, real-time database reads and writes, component-level state, responsive layout across devices, and UI feedback for user actions such as empty cart, authentication errors, and purchase confirmation.</p>
+            <div class="tag-row">
+              <span>Responsive Web</span><span>Firebase Auth</span><span>Cart Logic</span>
+              <span>JavaScript</span><span>Firestore</span>
+            </div>
+          </div>
+        </article>
 
-      <article class="project-detail">
-        <div class="project-number">05</div>
-        <div>
-          <span class="card-kicker">Java, C++, Console Application</span>
-          <h2>Banking Management System</h2>
-          <p>A console-based banking application handling account creation, account management, transaction validation, deposits, withdrawals, and record updates. The project focuses on reliable control flow, input validation, and data consistency in financial-style operations.</p>
-          <p>It demonstrates core programming discipline: validating user actions, protecting account state, and building transaction-oriented logic with clean procedural and object-oriented concepts.</p>
-          <div class="tag-row"><span>Transactions</span><span>Validation</span><span>Java</span><span>C++</span></div>
-        </div>
-      </article>
+        <!-- Online Quiz -->
+        <article class="project-detail" data-category="web" data-reveal>
+          <div class="project-num">03</div>
+          <div>
+            <span class="card-kicker">Python · Flask · Session Management</span>
+            <h2>Online Quiz System</h2>
+            <p>A Flask-based web application for running browser-accessible quizzes with automated scoring. The system manages quiz flow through server-side session tracking, records responses per question, calculates results on submission, and presents a scored results page with feedback.</p>
+            <p>This project demonstrates Python backend routing, HTML form handling, server-side session control, and scoring algorithm design. It is a compact but representative example of building stateful dynamic web applications without a frontend framework — keeping business logic cleanly in the server layer.</p>
+            <div class="tag-row">
+              <span>Flask</span><span>Sessions</span><span>Scoring Logic</span><span>Web App</span>
+            </div>
+          </div>
+        </article>
 
-      <article class="project-detail">
-        <div class="project-number">06</div>
-        <div>
-          <span class="card-kicker">C++, Java, CRUD, OOP</span>
-          <h2>Student Management System</h2>
-          <p>A CRUD-based academic record management system for creating, reading, updating, and deleting student information. The project applies object-oriented design to organize student records and common administrative actions.</p>
-          <p>This project strengthens fundamentals in data modeling, menu-driven workflows, validation, and maintainable program structure. It is a useful base for larger school or university management systems.</p>
-          <div class="tag-row"><span>CRUD</span><span>OOP</span><span>Academic Records</span><span>Data Modeling</span></div>
-        </div>
-      </article>
+        <!-- Library Management -->
+        <article class="project-detail" data-category="java" data-reveal data-delay="1">
+          <div class="project-num">04</div>
+          <div>
+            <span class="card-kicker">Java · OOP · Desktop Application</span>
+            <h2>Library Management System</h2>
+            <p>A desktop Java application managing the core operations of a library: cataloguing books, recording member registrations, tracking book issues and returns, calculating overdue fines, and generating summary records. Every entity — Book, Member, Transaction, Record — is designed as a distinct class with clear responsibilities and relationships.</p>
+            <p>The project demonstrates Java class design, encapsulation, inheritance, validation logic, and state management for administrative workflows. It provides a practical model for turning institutional processes into maintainable software modules with proper separation of concerns.</p>
+            <div class="tag-row">
+              <span>Java</span><span>OOP</span><span>Records</span><span>Validation</span><span>Desktop</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Banking System -->
+        <article class="project-detail" data-category="java" data-reveal data-delay="2">
+          <div class="project-num">05</div>
+          <div>
+            <span class="card-kicker">Java · C++ · Console Application</span>
+            <h2>Banking Management System</h2>
+            <p>A console-based banking application implementing account creation, balance enquiry, fund deposits, withdrawals with limit validation, inter-account transfers, and transaction history. The system prioritises reliable control flow — every operation validates input, protects account state, and logs the transaction before committing it.</p>
+            <p>Built with both Java and C++ implementations to reinforce cross-language understanding of the same domain model. Demonstrates core programming discipline in financial-style operations: idempotency, error handling, and data consistency under concurrent-style scenarios.</p>
+            <div class="tag-row">
+              <span>Transactions</span><span>Validation</span><span>Java</span><span>C++</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Student Management -->
+        <article class="project-detail" data-category="java" data-reveal>
+          <div class="project-num">06</div>
+          <div>
+            <span class="card-kicker">C++ · Java · CRUD · OOP</span>
+            <h2>Student Management System</h2>
+            <p>A CRUD-based academic record management application supporting creation, retrieval, update, and deletion of student profiles including course enrolments, grades, and personal records. The system is menu-driven with input validation on each operation to prevent corrupt state.</p>
+            <p>Designed to demonstrate object-oriented data modelling, menu-driven workflow architecture, validation layers, and program structure that scales. Useful as a foundation for larger university administration systems requiring more complex reporting or role-based access.</p>
+            <div class="tag-row">
+              <span>CRUD</span><span>OOP</span><span>Academic Records</span><span>Data Modelling</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="cta-band" data-reveal>
+      <h2>Every project here is available to discuss.</h2>
+      <p>Architecture decisions, lessons learned, technical trade-offs — I'm happy to walk through any of these in detail.</p>
+      <div class="btn-group">
+        <a class="button primary" href="contact.html">Start a Conversation</a>
+        <a class="button ghost-white" href="assets/documents/Syed-Jawad-Shah-Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer"><p>Syed Jawad Shah - Full Stack Software Engineer</p><div><a href="mailto:sjawadshah2001@gmail.com">Email</a><a href="https://github.com/syedjawadshah2001">GitHub</a><a href="https://linkedin.com/in/syed-jawad-shah-17a380252">LinkedIn</a></div></footer>
+  <footer class="site-footer">
+    <p>© 2026 Syed Jawad Shah · Full Stack Software Engineer · Rawalpindi, Pakistan</p>
+    <div class="footer-links">
+      <a href="mailto:sjawadshah2001@gmail.com">Email</a>
+      <a href="https://github.com/syedjawadshah2001" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/syed-jawad-shah-17a380252" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="assets/documents/Syed-Jawad-Shah-Resume.pdf" target="_blank" rel="noopener">Resume PDF</a>
+    </div>
+  </footer>
   <script src="assets/script.js"></script>
 </body>
 </html>

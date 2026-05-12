@@ -2,69 +2,141 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Experience | Syed Jawad Shah</title>
-  <meta name="description" content="Professional experience of Syed Jawad Shah, including Amal Learning and Hit Hub Solutions.">
+  <meta name="description" content="Professional experience of Syed Jawad Shah — Junior Web &amp; App Developer at Amal Learning, Software Engineer Intern at Hit Hub Solutions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">SJ</span><span><strong>Syed Jawad Shah</strong><small>Full Stack Software Engineer</small></span></a>
+    <a class="brand" href="index.html">
+      <span class="brand-mark">SJ</span>
+      <span><strong>Syed Jawad Shah</strong><small>Full Stack Software Engineer</small></span>
+    </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
     <nav class="site-nav" id="site-nav">
-      <a href="index.html" data-page="home">Home</a><a href="about.html" data-page="about">About</a><a href="experience.html" data-page="experience">Experience</a><a href="projects.html" data-page="projects">Projects</a><a href="contact.html" data-page="contact">Contact</a>
+      <a href="index.html" data-page="home">Home</a>
+      <a href="about.html" data-page="about">About</a>
+      <a href="skills.html" data-page="skills">Skills</a>
+      <a href="experience.html" data-page="experience">Experience</a>
+      <a href="projects.html" data-page="projects">Projects</a>
+      <a href="contact.html" data-page="contact">Contact</a>
+      <a href="contact.html" class="nav-cta">Hire Me</a>
     </nav>
   </header>
 
   <main>
     <section class="page-hero">
-      <p class="eyebrow">Experience</p>
-      <h1>Production exposure across web, mobile, APIs, Firebase, and deployment workflows.</h1>
-      <p>Syed has worked on live applications, backend services, cross-platform mobile apps, database integrations, and system maintenance in collaborative development environments.</p>
+      <p class="eyebrow" data-reveal>Experience</p>
+      <h1 data-reveal data-delay="1">Production experience across web, mobile, APIs, and backend systems.</h1>
+      <p data-reveal data-delay="2">Two professional roles in live production environments — active development at Amal Learning and a backend engineering internship at Hit Hub Solutions.</p>
     </section>
 
     <section class="section">
       <div class="experience-list">
-        <article class="experience-item">
-          <div class="experience-meta">
-            <span>Oct 2025 - Present</span>
+
+        <!-- Amal Learning -->
+        <article class="experience-item" data-reveal>
+          <div class="exp-meta">
+            <div class="exp-logo green">AL</div>
+            <span class="exp-date current">Oct 2025 – Present</span>
             <strong>Amal Learning</strong>
+            <small>Rawalpindi, Pakistan</small>
           </div>
-          <div>
-            <h2>Junior Web Developer & App Developer</h2>
-            <p>Developing deployed web and mobile applications with React, React Native, Node.js, and Next.js. The role covers frontend UI, backend API work, database integration, bug fixing, performance optimization, version control, and production support.</p>
-            <div class="tag-row"><span>React</span><span>React Native</span><span>Node.js</span><span>Next.js</span><span>REST APIs</span><span>Git</span></div>
+          <div class="exp-content">
+            <h2>Junior Web Developer &amp; App Developer</h2>
+            <p>Building and maintaining deployed web and mobile applications used by real users. The role spans the full stack — React and Next.js on the frontend, Node.js APIs, database integration, and cross-platform mobile with React Native.</p>
+            <ul class="exp-highlights">
+              <li>Developed production React and Next.js features with a focus on performance and clean component architecture</li>
+              <li>Built cross-platform mobile application screens and flows using React Native for Android and iOS</li>
+              <li>Designed and maintained Node.js RESTful APIs handling live user data and business logic</li>
+              <li>Integrated third-party services and managed backend data flows with proper error handling</li>
+              <li>Participated in code reviews, sprint planning, and Git-based collaborative workflows</li>
+              <li>Identified and resolved production bugs with root-cause analysis and regression testing</li>
+            </ul>
+            <div class="tag-row">
+              <span>React.js</span><span>React Native</span><span>Next.js</span><span>Node.js</span>
+              <span>REST APIs</span><span>Git</span><span>Production Support</span>
+            </div>
           </div>
         </article>
 
-        <article class="experience-item">
-          <div class="experience-meta">
-            <span>Jul 2024 - Sep 2024</span>
+        <!-- Hit Hub Solutions -->
+        <article class="experience-item" data-reveal data-delay="1">
+          <div class="exp-meta">
+            <div class="exp-logo">HH</div>
+            <span class="exp-date">Jul 2024 – Sep 2024</span>
             <strong>Hit Hub Solutions</strong>
+            <small>Rawalpindi, Pakistan</small>
           </div>
-          <div>
+          <div class="exp-content">
             <h2>Software Engineer Intern</h2>
-            <p>Developed and enhanced backend components for scalable web applications using Python, Flask, and Java. Designed RESTful APIs, integrated Firebase services, improved performance through debugging and refactoring, and participated in Agile workflows including sprint planning and code reviews.</p>
-            <div class="tag-row"><span>Python</span><span>Flask</span><span>Java</span><span>Firebase</span><span>Agile</span><span>Testing</span></div>
+            <p>Developed and enhanced backend components for scalable web applications during a structured internship. Worked primarily with Python, Flask, and Java in an Agile team environment with sprint-based delivery cycles.</p>
+            <ul class="exp-highlights">
+              <li>Built and extended RESTful API endpoints in Flask and Python for web application backend features</li>
+              <li>Integrated Firebase Authentication and Firestore for user session management and data persistence</li>
+              <li>Improved backend performance through targeted debugging, profiling, and code refactoring</li>
+              <li>Contributed to Java-based backend modules with a focus on OOP principles and maintainability</li>
+              <li>Participated in Agile sprint planning, daily standups, and peer code review sessions</li>
+              <li>Wrote unit tests and contributed to regression coverage for critical backend functionality</li>
+            </ul>
+            <div class="tag-row">
+              <span>Python</span><span>Flask</span><span>Java</span><span>Firebase</span>
+              <span>Agile</span><span>Unit Testing</span><span>REST APIs</span>
+            </div>
           </div>
         </article>
+
       </div>
     </section>
 
+    <!-- ── CAPABILITIES PROVEN ── -->
     <section class="section band">
-      <div class="section-heading">
+      <div class="section-head" data-reveal>
         <p class="eyebrow">Capabilities</p>
         <h2>What this experience proves</h2>
       </div>
       <div class="cards three">
-        <article class="card"><h3>Full-stack delivery</h3><p>Comfortable moving between user-facing UI, API design, database integration, and deployment responsibilities.</p></article>
-        <article class="card"><h3>Production mindset</h3><p>Experience maintaining live systems, fixing bugs, improving performance, and using Git-based development workflows.</p></article>
-        <article class="card"><h3>Mobile readiness</h3><p>Hands-on React Native development for cross-platform Android and iOS application experiences.</p></article>
+        <article class="card" data-reveal data-delay="1">
+          <span class="card-kicker">Full-Stack Delivery</span>
+          <h3>Moves between UI, APIs, and databases comfortably</h3>
+          <p>Both roles required working across the stack — no one area was handed off. Frontend, backend, data layer, and mobile were all in scope.</p>
+        </article>
+        <article class="card" data-reveal data-delay="2">
+          <span class="card-kicker">Production Mindset</span>
+          <h3>Experience shipping and maintaining live systems</h3>
+          <p>Amal Learning involves real deployed applications with real users. That means bug fixes under pressure, performance awareness, and code quality that lasts.</p>
+        </article>
+        <article class="card" data-reveal data-delay="3">
+          <span class="card-kicker">Team Engineering</span>
+          <h3>Agile workflows, Git, and collaborative code review</h3>
+          <p>Both roles used sprint-based Agile workflows, Git branching strategies, and peer code reviews — standard professional engineering practice.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="cta-band" data-reveal>
+      <h2>See the projects that back this experience.</h2>
+      <p>Real systems built outside of work hours — AI tools, web platforms, mobile apps, and backend APIs.</p>
+      <div class="btn-group">
+        <a class="button primary" href="projects.html">View Projects</a>
+        <a class="button ghost-white" href="contact.html">Contact Me</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><p>Syed Jawad Shah - Full Stack Software Engineer</p><div><a href="mailto:sjawadshah2001@gmail.com">Email</a><a href="https://github.com/syedjawadshah2001">GitHub</a><a href="https://linkedin.com/in/syed-jawad-shah-17a380252">LinkedIn</a></div></footer>
+  <footer class="site-footer">
+    <p>© 2026 Syed Jawad Shah · Full Stack Software Engineer · Rawalpindi, Pakistan</p>
+    <div class="footer-links">
+      <a href="mailto:sjawadshah2001@gmail.com">Email</a>
+      <a href="https://github.com/syedjawadshah2001" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/syed-jawad-shah-17a380252" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="assets/documents/Syed-Jawad-Shah-Resume.pdf" target="_blank" rel="noopener">Resume PDF</a>
+    </div>
+  </footer>
   <script src="assets/script.js"></script>
 </body>
 </html>
