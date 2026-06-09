@@ -10,6 +10,7 @@
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -38,7 +39,7 @@
       <div class="hero-copy">
         <div class="avail-badge" data-reveal>
           <span class="avail-dot"></span>
-          Open to full-time opportunities
+          Available Immediately &mdash; Open to Hire
         </div>
         <h1 data-reveal data-delay="1">
           <span>Syed Jawad Shah</span><br>
@@ -128,31 +129,108 @@
       </div>
     </section>
 
-    <!-- ── SELECTED WORK ── -->
+    <!-- ── FEATURED WORK CAROUSEL ── -->
     <section class="section band">
       <div class="section-head" data-reveal>
-        <p class="eyebrow">Selected Work</p>
-        <h2>Projects that demonstrate real engineering</h2>
+        <p class="eyebrow">Featured Work</p>
+        <h2>Projects built to solve real problems</h2>
+        <p>Four of eight projects — each with a live demo or detailed breakdown.</p>
       </div>
-      <div class="cards three" data-reveal data-delay="1">
-        <article class="card">
-          <span class="card-kicker">AI + Backend</span>
-          <h3>Automated Book Generation System</h3>
-          <p>FastAPI platform integrating OpenAI and Supabase to generate structured book content from user topics.</p>
-          <a href="projects.html#book-generator">View project</a>
-        </article>
-        <article class="card">
-          <span class="card-kicker">Automation + FYP</span>
-          <h3>Document Format Checking System</h3>
-          <p>Python and Flask system validating PDF formatting — margins, fonts, spacing — with 100% rule accuracy.</p>
-          <a href="projects.html#adf-checker">View project</a>
-        </article>
-        <article class="card">
-          <span class="card-kicker">Web Platform</span>
-          <h3>E-Commerce Web Application</h3>
-          <p>Responsive shopping platform with Firebase authentication, product catalog, cart logic, and checkout flow.</p>
-          <a href="projects.html#ecommerce">View project</a>
-        </article>
+
+      <div class="carousel-outer" data-reveal data-delay="1">
+        <div class="carousel-track-wrap">
+          <div class="carousel-track">
+
+            <!-- Slide 1 — FYP (live) -->
+            <div class="carousel-item">
+              <div class="project-slide">
+                <div class="slide-aside c-green">
+                  <span class="slide-num">FYP</span>
+                  <span class="slide-cat">Automation</span>
+                </div>
+                <div class="slide-body">
+                  <span class="slide-live"><span class="slide-live-dot"></span>Live on Streamlit Cloud</span>
+                  <h3>Automated Document Format Checking System</h3>
+                  <p>Python &amp; Flask system that validates academic PDFs against formatting rules — margins, fonts, spacing, and structure — with 100% rule-validation accuracy.</p>
+                  <div class="tag-row" style="margin-bottom:18px;"><span>Python</span><span>Flask</span><span>PDF Parsing</span><span>Firebase</span></div>
+                  <div class="project-links">
+                    <a class="proj-link live" href="https://adf-check-m6myjfhfifbajpotgr74zg.streamlit.app" target="_blank" rel="noopener">&#9679; Live Demo</a>
+                    <a class="proj-link" href="projects.html#adf-checker">Full Details &rarr;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 — Book Generator -->
+            <div class="carousel-item">
+              <div class="project-slide">
+                <div class="slide-aside c-dark">
+                  <span class="slide-num">01</span>
+                  <span class="slide-cat">AI · Backend</span>
+                </div>
+                <div class="slide-body">
+                  <h3>Automated Book Generation System</h3>
+                  <p>FastAPI backend integrating OpenAI to generate structured multi-chapter book content from user topics, stored in Supabase PostgreSQL with full authentication.</p>
+                  <div class="tag-row" style="margin-bottom:18px;"><span>FastAPI</span><span>OpenAI API</span><span>Supabase</span><span>Python</span></div>
+                  <div class="project-links">
+                    <a class="proj-link" href="projects.html#book-generator">Full Details &rarr;</a>
+                    <a class="proj-link" href="https://github.com/syedjawadshah2001" target="_blank" rel="noopener">GitHub &rarr;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 — E-Commerce -->
+            <div class="carousel-item">
+              <div class="project-slide">
+                <div class="slide-aside c-blue">
+                  <span class="slide-num">02</span>
+                  <span class="slide-cat">Web · Firebase</span>
+                </div>
+                <div class="slide-body">
+                  <h3>E-Commerce Web Application</h3>
+                  <p>Responsive shopping platform with Firebase authentication, real-time Firestore product catalog, add-to-cart state management, and full checkout flow.</p>
+                  <div class="tag-row" style="margin-bottom:18px;"><span>JavaScript</span><span>Firebase Auth</span><span>Firestore</span><span>HTML/CSS</span></div>
+                  <div class="project-links">
+                    <a class="proj-link" href="projects.html#ecommerce">Full Details &rarr;</a>
+                    <a class="proj-link" href="https://github.com/syedjawadshah2001" target="_blank" rel="noopener">GitHub &rarr;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 — Library Management -->
+            <div class="carousel-item">
+              <div class="project-slide">
+                <div class="slide-aside c-gold">
+                  <span class="slide-num">04</span>
+                  <span class="slide-cat">Java · OOP</span>
+                </div>
+                <div class="slide-body">
+                  <h3>Library Management System</h3>
+                  <p>Desktop Java application managing books, members, issue &amp; return tracking, and automated fine calculation — built with clean OOP class design and validation logic.</p>
+                  <div class="tag-row" style="margin-bottom:18px;"><span>Java</span><span>OOP</span><span>Desktop App</span><span>Validation</span></div>
+                  <div class="project-links">
+                    <a class="proj-link" href="projects.html">Full Details &rarr;</a>
+                    <a class="proj-link" href="https://github.com/syedjawadshah2001" target="_blank" rel="noopener">GitHub &rarr;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="carousel-nav">
+          <button class="carousel-btn carousel-prev" aria-label="Previous project">&#8592;</button>
+          <div class="carousel-dots">
+            <button class="carousel-dot active" aria-label="Slide 1"></button>
+            <button class="carousel-dot" aria-label="Slide 2"></button>
+            <button class="carousel-dot" aria-label="Slide 3"></button>
+            <button class="carousel-dot" aria-label="Slide 4"></button>
+          </div>
+          <button class="carousel-btn carousel-next" aria-label="Next project">&#8594;</button>
+        </div>
       </div>
     </section>
 

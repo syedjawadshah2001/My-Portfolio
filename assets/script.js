@@ -122,4 +122,39 @@
       });
     });
   }
+  // ── CAROUSEL ──
+  document.querySelectorAll('.carousel-outer').forEach(function (outer) {
+    var track = outer.querySelector('.carousel-track');
+    var items = outer.querySelectorAll('.carousel-item');
+    var dots  = outer.querySelectorAll('.carousel-dot');
+    var prev  = outer.querySelector('.carousel-prev');
+    var next  = outer.querySelector('.carousel-next');
+    if (!track || !items.length) return;
+    var cur = 0, total = items.length, timer;
+
+    function goTo(i) {
+      cur = (i + total) % total;
+      track.style.transform = 'translateX(-' + (cur * 100) + '%)';
+      dots.forEach(function (d, idx) { d.classList.toggle('active', idx === cur); });
+    }
+    function startAuto() { timer = setInterval(function () { goTo(cur + 1); }, 4800); }
+    function stopAuto()  { clearInterval(timer); }
+
+    if (prev) prev.addEventListener('click', function () { stopAuto(); goTo(cur - 1); startAuto(); });
+    if (next) next.addEventListener('click', function () { stopAuto(); goTo(cur + 1); startAuto(); });
+    dots.forEach(function (d, i) { d.addEventListener('click', function () { stopAuto(); goTo(i); startAuto(); }); });
+
+    // touch/swipe
+    var touchX = 0;
+    outer.addEventListener('touchstart', function (e) { touchX = e.touches[0].clientX; }, {passive:true});
+    outer.addEventListener('touchend', function (e) {
+      var diff = touchX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) { stopAuto(); goTo(diff > 0 ? cur + 1 : cur - 1); startAuto(); }
+    }, {passive:true});
+
+    outer.addEventListener('mouseenter', stopAuto);
+    outer.addEventListener('mouseleave', startAuto);
+    goTo(0);
+    startAuto();
+  });
 })();
